@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+sandbox-skills/
+.skill-stage-*/
+.skill-backup-*/
+.env
+.env.*
+local-config/
+receipts/
+*.log
+dist/

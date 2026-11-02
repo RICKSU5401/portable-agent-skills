@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "provider": "native-provider",
+  "quota_pool_id": "SET_ACTUAL_POOL",
+  "account_ref": "SET_NONSECRET_ALIAS",
+  "model": "SET_VERIFIED_MODEL",
+  "observed_at": null,
+  "freshness_seconds": 120,
+  "coverage_complete": false,
+  "hard_stop": false,
+  "limits": [
+    {"id":"five_hour","unit":"percent","remaining":null,"observed_at":null,"source":"NOT_YET_CAPTURED","reset_at":null,"confidence":"unknown"},
+    {"id":"seven_day","unit":"percent","remaining":null,"observed_at":null,"source":"NOT_YET_CAPTURED","reset_at":null,"confidence":"unknown"}
+  ],
+  "context": null
+}

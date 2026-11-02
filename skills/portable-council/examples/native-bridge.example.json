@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "enabled": false,
+  "reviewed_native_command": false,
+  "provider": "claude-code",
+  "parser": "claude_result_json_v1",
+  "settings": {
+    "model": "COPY_EXACT_ACCOUNT_VISIBLE_MODEL_ID",
+    "effort": "COPY_SUPPORTED_EFFORT",
+    "fast": false,
+    "modes": {}
+  },
+  "command": [
+    "REPLACE_WITH_REVIEWED_NATIVE_EXECUTABLE",
+    "--print",
+    "--model", "{model}",
+    "--effort", "{effort}",
+    "--settings", "{settings_json}",
+    "--output-format", "json",
+    "--tools", "",
+    "--strict-mcp-config", "--mcp-config", "{}"
+  ]
+}

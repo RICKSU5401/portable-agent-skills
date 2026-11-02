@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "host": "your-host",
+  "seats": [
+    {
+      "provider": "your-peer",
+      "enabled": false,
+      "command": ["REPLACE_WITH_REVIEWED_EXECUTABLE", "adapter.py"],
+      "timeout_seconds": 180,
+      "max_attempts": 1,
+      "requested": {
+        "model": "COPY_EXACT_ACCOUNT_VISIBLE_MODEL_ID",
+        "effort": "COPY_SUPPORTED_EFFORT",
+        "fast": false,
+        "modes": {}
+      },
+      "evidence": null
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "kind": "return",
+  "origin_ref": "origin-chat-001",
+  "source_handoff_id": "source-001",
+  "source_manifest_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "task_id": "task-001",
+  "delegated_unit_id": "unit-002",
+  "return_handoff_id": "return-001",
+  "outcome": "partial",
+  "summary": "EXAMPLE ONLY: replace all identities, the source hash and this text with observed facts.",
+  "remaining_work": ["Origin must inspect actual evidence and reconcile current progress."]
+}

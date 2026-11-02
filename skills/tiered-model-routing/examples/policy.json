@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "max_evidence_age_hours": 24,
+  "providers": {
+    "example-provider": {
+      "surface": "example-native-cli",
+      "access_mode": "subscription_cli",
+      "tiers": {
+        "D1": {"family": "example-small", "effort_preference": ["normal"], "modes": {"fast": false}, "min_context_tokens": null},
+        "D2": {"family": "example-balanced", "effort_preference": ["intensive", "normal"], "modes": {"fast": false}, "min_context_tokens": null},
+        "D3": {"family": "example-strong", "effort_preference": ["intensive"], "modes": {"fast": false}, "min_context_tokens": null},
+        "D4": {"family": "example-expert", "effort_preference": ["intensive"], "modes": {"fast": false}, "min_context_tokens": null}
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "unit-002",
+  "quota_pool_id": "SET_ACTUAL_POOL",
+  "model": "SET_VERIFIED_MODEL",
+  "estimate_basis": "",
+  "safety_factor": 1.5,
+  "context_needed_tokens": null,
+  "estimates": {
+    "five_hour":{"unit":"percent","next_cost_upper_bound":null,"handoff_reserve":null,"uncertainty_margin":null},
+    "seven_day":{"unit":"percent","next_cost_upper_bound":null,"handoff_reserve":null,"uncertainty_margin":null}
+  }
+}

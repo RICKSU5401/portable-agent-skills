@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "approval_ref": "",
+  "max_attempts_per_handoff": 1,
+  "profiles": {
+    "native-provider": {
+      "enabled": false,
+      "authorized": false,
+      "authorization_ref": "",
+      "allowed_projects": [],
+      "allowed_task_ids": [],
+      "executable": "",
+      "argv": ["--model", "SET_VERIFIED_MODEL", "{prompt}"],
+      "quota_pool_id": "",
+      "model": "SET_VERIFIED_MODEL",
+      "account_ref": "",
+      "billing_mode": "subscription",
+      "auth_verified": false,
+      "fast_mode": false,
+      "billing_verified_at": null
+    }
+  }
+}

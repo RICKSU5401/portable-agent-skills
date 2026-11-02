@@ -1,0 +1,25 @@
+{
+  "schema_version": 2,
+  "provider": "example-provider",
+  "surface": "example-native-cli",
+  "observed_at": "2000-01-01T00:00:00Z",
+  "source_kind": "fixture",
+  "source_ref": "SYNTHETIC EXAMPLE ONLY - not native account evidence",
+  "account_alias": "example-account",
+  "authenticated": false,
+  "models": [
+    {
+      "id": "example-strong-v1.10",
+      "family": "example-strong",
+      "version": [1, 10],
+      "available": null,
+      "efforts": ["normal", "intensive"],
+      "modes": {"fast": [false]},
+      "mode_billing": {"fast": "unknown"},
+      "context_tokens": null,
+      "billing": "unknown",
+      "subscription_eligible": null,
+      "quota_status": "unknown"
+    }
+  ]
+}
