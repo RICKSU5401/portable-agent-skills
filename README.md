@@ -36,7 +36,7 @@ The release check is a heuristic for accidental private data and package layout.
 
 ## Install, update and remove
 
-Choose an empty test skills directory first; later choose the directory documented by your host. The installer accepts any explicit directory and does not guess Windows/macOS/Linux host paths, edit global instruction files, or replace an unmanaged personal skill.
+Choose an empty test skills directory first; later choose the directory documented by your host. Use its physical filesystem path: the installer rejects symlinks and Windows junctions, including linked ancestors. It does not guess Windows/macOS/Linux host paths, edit global instruction files, or replace an unmanaged personal skill.
 
 PowerShell example:
 

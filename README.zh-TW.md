@@ -29,7 +29,7 @@ python -B scripts/run_tests.py
 
 ## 安裝、更新、移除
 
-先建立測試技能目錄，再用宿主文件指定的目錄安裝。Windows PowerShell：
+先建立測試技能目錄，再用宿主文件指定的目錄安裝。請使用實際檔案系統路徑：安裝器會拒絕符號連結、Windows junction 及含連結的上層目錄。Windows PowerShell：
 
 ```powershell
 New-Item -ItemType Directory -Force -Path ./sandbox-skills

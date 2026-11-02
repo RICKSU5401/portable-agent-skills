@@ -12,7 +12,9 @@ class InstallTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
-        self.base = Path(self.temp.name)
+        # macOS may expose its normal temp directory through a system symlink.
+        # Use the physical fixture root; linked inputs are tested separately.
+        self.base = Path(self.temp.name).resolve()
         self.source = self.base / "source"
         self.source.mkdir()
         (self.source / "SKILL.md").write_text("version one", encoding="utf-8")
@@ -70,6 +72,16 @@ class InstallTests(unittest.TestCase):
             self.skipTest("Symlink creation unavailable")
         with self.assertRaisesRegex(ValueError, "Symlink"):
             self.call("install")
+
+    def test_symlinked_destination_ancestor_is_rejected(self):
+        link = self.base / "linked-destination"
+        try:
+            link.symlink_to(self.dest, target_is_directory=True)
+        except OSError:
+            self.skipTest("Symlink creation unavailable")
+        with self.assertRaisesRegex(ValueError, "Symlink"):
+            manager.manage("install", self.name, link, self.source, True)
+        self.assertEqual(list(self.dest.iterdir()), [])
 
 
 if __name__ == "__main__":
